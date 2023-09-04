@@ -2,7 +2,7 @@
 
 A Discord bot that allows interaction with the VRChat API.
 
-> Warning: run the auth.js script first to get the token login from VRChat
+> **Warning:** run the auth.js script first to get the token login from VRChat
 
 ### Features
 
@@ -22,8 +22,13 @@ A Discord bot that allows interaction with the VRChat API.
 
 1. Clone this repository.
 2. Install the dependencies with `npm install`.
-3. Configure your `config.json` for authentication.
-4. Run the bot with `node bot.js`.
+4. Run the bot with `node auth.js`.
+5. Write your ID and Password 
+6. Rerun the `auth.js` to get asked for 2FA
+7. Add the 2FA code on the terminal
+8. The `config.json` file is generated and can be used !
+
+> **Note:** Do not work on the auth.js file, create a new file like bot.js to use the API
 
 ### Authentication
 
@@ -49,6 +54,12 @@ This is what the config file will look like:
 ```
 
 You can delete the `username` and `password` fields and keep the rest. This file will authenticate you on the API for each of your VRChat projects!
+
+#### Using the authentification
+
+Add this code on your .js file: `const config = require('./config.json');` to get your auth config
+
+Enjoy coding !
 
 ### License
 
