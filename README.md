@@ -2,6 +2,8 @@
 
 A Discord bot that allows interaction with the VRChat API.
 
+> Warning: run the auth.js script first to get the token login from VRChat
+
 ### Features
 
 - **Authentication**: Manage authentication using a code system.
@@ -26,12 +28,6 @@ A Discord bot that allows interaction with the VRChat API.
 ### Authentication
 
 #### Script
-
-For authentication, you will need a file to generate your VRChat token and cookie:
-
-```JS
-// ... [Content of the auth.js file]
-```
 
 When you run the script with the `auth.js` command, the console will ask for your username and password. Fill them out, and then the script will generate a `config.json` in which it will store the information.
 
