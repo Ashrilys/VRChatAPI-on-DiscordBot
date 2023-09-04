@@ -76,18 +76,3 @@ new (class Auth {
         console.log(json.requiresTwoFactorAuth ? 'Please verif code 2fa.' : 'Connected')
     }
 })()
-// console.log(username || 'NONE', password || 'NONE', code || 'NONE');
-
-// const out = (async () => {
-//     if (!code) {
-//
-//         console.log(response.statusCode, json, response.headers['set-cookie'])
-//     } else {
-//         const response = await request('https://api.vrchat.cloud/api/1/auth/user', {
-//             headers: {
-//                 'user-agent': 'Mozilla/5.0',
-//                 'Authorization': `Basic ${Buffer.from(username + `:` + password).toString('base64')}`
-//             }
-//         });
-//     }
-// })();
